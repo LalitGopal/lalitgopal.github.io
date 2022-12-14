@@ -48,13 +48,21 @@ main section {
 }
 
 
-
+/*
 .list-container {
     display: flex;
-    gap: 90px;
+    gap: 10px;
     margin-left: 9.5%;
     margin-top: 2%;
 }
+*/
+
+.list-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 .listtitle {
     height: 12vh;
@@ -71,4 +79,22 @@ main section {
 h2 {
     font-size: 20px;
     word-spacing: 1.5px;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }
