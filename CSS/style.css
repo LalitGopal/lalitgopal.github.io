@@ -1,100 +1,57 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: rgb(0, 126, 126);
-}
-
-.image {
-    height: 45vh;
-    width: 20vw;
-    margin-left: 5.2%;
-    margin-top: 3%;
-}
-
-header section {
-    display: flex;
-}
-
-.Main-container {
-    height: 45vh;
 }
 
 h1 {
-    margin-top: 3%;
-    margin-left: 10%;
-    margin-bottom: 6%;
-    margin-right: 6%;
-    font-weight: bolder;
-    font-size: 45px;
-
-}
-
-header section div p {
-    margin-top: 6%;
-    margin-left: 10%;
-    margin-right: 6%;
-    word-spacing: inherit;
-    letter-spacing: inherit;
-    color: rgb(34, 32, 32);
-    font-weight: bold;
-    font-size: 30px;
-    font-style: italic;
-    width: 75%;
-}
-
-main section {
-    height: 100vh;
-    width: 100vw;
-}
-
-
-/*
-.list-container {
-    display: flex;
-    gap: 10px;
-    margin-left: 9.5%;
-    margin-top: 2%;
-}
-*/
-
-.list-container:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-.listtitle {
-    height: 12vh;
-    width: 81vw;
-    background-color: rgb(17, 86, 143);
     font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    font-weight: bold;
+    font-size: 25px;
+    font-style: italic;
+    margin: 5px;
+
+}
+
+.headContainer {
     display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+.headbox {
+    margin: 20px;
+}
+
+.detailbox {
+    display: flex;
+}
+
+.seperator {
+    background-color: rgb(209, 225, 238);
+    font-size: 25px;
+}
+
+.detailContainer {
+    width: auto;
+    height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.detailbox {
+    display: block;
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.footer {
+    margin: 10px;
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     justify-content: center;
-    align-items: center;
-    margin-top: 2%;
-    margin-left: 5%;
-}
-
-h2 {
-    font-size: 20px;
-    word-spacing: 1.5px;
-}
-
-.column {
-    float: left;
-    width: 20%;
-    padding: 10px;
-}
-
-@media screen and (max-width: 992px) {
-    .column {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
 }
