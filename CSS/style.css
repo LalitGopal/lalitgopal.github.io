@@ -31,6 +31,7 @@ p {
     font-size: 25px;
 }
 
+
 .detailContainer {
     width: auto;
     height: inherit;
@@ -41,8 +42,10 @@ p {
 
 .detailbox {
     display: block;
+    width: 150px;
     margin: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-grow: 1;
 }
 
 .footer {
@@ -50,4 +53,9 @@ p {
     display: flex;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     justify-content: center;
+}
+
+ul{
+    padding-left: 0;
+    list-style-position: inside;
 }
