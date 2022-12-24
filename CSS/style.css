@@ -1,14 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection{
+    color: rgb(155, 22, 48);
+    background-color: goldenrod;
+}
+
 
 h1 {
-    font-size: 35px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 43px;
+    font-family: 'Cinzel', serif;
+    word-spacing: 4px;
+    font-kerning: none;
+    margin-bottom: 38px;
+    margin-left: 30px;
+    cursor: none;
+    /*  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+}
+
+h3{
+    padding-left: 10px;
+    font-family: 'Rubik Vinyl', cursive;
+    font-family: 'Marcellus', serif;
+    color: rgb(0, 0, 0);
+    padding-bottom: 10px;
+    font-size: 23px;
 }
 
 p {
-    font-weight: bold;
-    font-size: 25px;
+    font-family: 'Nanum Gothic', sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 2.5px;
+    font-size: 27px;
     font-style: italic;
     margin: 5px;
+    margin-left: 30px;
 
 }
 
@@ -27,8 +62,13 @@ p {
 }
 
 .seperator {
-    background-color: rgb(209, 225, 238);
+    background-color: rgb(190, 224, 233);
+    background-color: rgb(156, 210, 224);
     font-size: 25px;
+    font-family: 'Oxygen', sans-serif;
+    padding-bottom: 7px; 
+    margin-bottom: 10px;
+    cursor:none;
 }
 
 
@@ -43,19 +83,53 @@ p {
 .detailbox {
     display: block;
     width: 150px;
+    aspect-ratio: 1/1;
     margin: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    flex-grow: 1;
+    flex-grow: 1;  
+    background-color: pink;
 }
 
 .footer {
-    margin: 10px;
+    margin-top: 2px;
+    margin-bottom: 13px;
     display: flex;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+   
     justify-content: center;
+    font-weight: bolder;
 }
 
 ul{
-    padding-left: 0;
+    padding-left: 10px;
     list-style-position: inside;
+}
+
+li{
+    cursor:pointer;
+    font-size: 19px;
+    transition: 0.7s ease;
+   font-family: sans-serif;
+}
+
+li:hover{
+ color: rgb(0, 187, 178);   
+ letter-spacing: 2.5px;
+ list-style-type: square;
+}
+
+.footer p{
+    font-family: 'Michroma', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+    transition:0.5s ease-in-out;
+}
+
+.footer p:hover{
+    color: rgb(156, 58, 119);
+    
+}
+
+a{
+    all:unset;
 }
